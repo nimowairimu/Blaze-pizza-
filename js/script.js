@@ -82,8 +82,7 @@ $(document).ready(function() {
   });
   $("#submitbutton").click(function(event) {
     event.preventDefault();
-    var inputtedFirstName = $("input#first-name").val();
-    var inputtedLastName = $("input#last-name").val();
+    var inputtedName = $("input#name").val();
     var inputtedEmailAddress = $("input#email-address").val();
     var inputtedPhoneNumber = $("input#phone-number").val();
     alert(inputtedFirstName + " " + inputtedLastName + " Your order will be ready in 15mins and will be delivered in the next 20 mins")
