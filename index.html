@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Blaze pizza </title>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="images/a.jpeg" id="lastClone" alt="">
+      <img src="images/b.jpeg" alt="carousel1">
+      <img src="images/p.jpeg" alt="carousel2">
+      <img src="images/z.jpeg" alt="carousel3">
+      <img src="images/j.jpeg" alt="carousel4">
+      <img src="images/a.jpeg" alt="carousel5">
+      <img src="images/b.jpeg" id="firstClone" alt="">
+    </div>
+  </div>
+  <button id="prevBtn">Previous</button>
+  <button id="nextBtn">Next</button>
+  <div class="menu col-md-12">
+      <div class="menu-overlay">
+          <h1 class="text-center text-white" id="menu">Menu</h1>
+          <div class="pizza-menu row text-center">
+              <figure class="col-sm-4">
+                  <img src="images/D.jpeg" alt="small-pizza" width="100" height="280" class="wiggle">
+                  <figcaption class="text-white">Small<br>Ksh. 300</figcaption>
+              </figure>
+              <figure class="col-sm-4">
+                  <img src="images/D.jpeg" alt="medium-pizza" width="100" height="280" class="wiggle">
+                  <figcaption class="text-white">Medium<br>Ksh. 600</figcaption>
+              </figure>
+              <figure class="col-sm-4">
+                  <img src="images/D.jpeg" alt="large-pizza" width="200" height="280" class="wiggle">
+                  <figcaption class="text-white">Large<br>Ksh. 1200</figcaption>
+              </figure>
+          </div>
+      </div>
+  </div>
+  <div class="orders" id="order">
+      <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+      <div class="form-group row">
+          <div class="col-md-12"></div>
+          <div class="col-md-8 order-overlay text-center">
+              <form class="col-md-8 text-center">
+            <label>Pick your pizza Flavour:</label>
+            <select class="custom-select custom-select-md mb-3 flavour" required>
+                <option value="hawaiian">Hawaiian</option>
+                <option value="vegtikka">Veg Tikka</option>
+                <option value="chickentikka">Chicken Tikka</option>
+                <option value="periperi">Peri-Peri Chicken</option>
+                <option value="bbq">BBQ Steak</option>
+                <option value="boerewors">Boerewors</option>
+                <option value="mushroom">Chicken and Mushroom</option>
+            </select>
+      <label> Pizza size Options</label>
+    <select class="browser-default custom-select" id="size">
+      <option selected>Choose pizza size...</option>
+      <option value="600">Small(500)</option>
+      <option value="900">Medium(Ksh 800)</option>
+      <option value="1200">Large(ksh 1200)</option>
+    </select>
+      <label>Pizza Crust Options</label>
+    <select class="browser-default custom-select" id="crust">
+      <option selected>Choose pizza crust...</option>
+      <option value="200">Flatbread(ksh 200) </option>
+      <option value="300">Stuffed(ksh 300)</option>
+      <option value="100">Gluten-free(ksh 100)</option>
+    </select>
+      <label>Pizza toppings Options</label>
+    <select class="browser-default custom-select" id="toppings" aria-label="Example select with button addon" required>
+      <option selected>Choose pizza topping...</option>
+      <option value="80">Bacon( Ksh. 80)</option>
+      <option value="80">Mushroom(Ksh. 80)</option>
+      <option value="50">Ham(ksh. 50)</option>
+      <option value="50">Cheese (ksh. 50)</option>
+ </select>
+ <br>
+ <lable>Number Of pizza</lable>
+      <input type="number" class="form-control input" id="noOfOrders" placeholder="how many pizzas?" required>
+    </select>
+  </div><br>
+</div>
+  <p class="total">Total Price:</p>
+  <div class="submit">
+    <button type="button" class="btn btn-info"  id ="wholeOrder">Submit</button>
+   <button type="submit" class="btn btn-info" value="Delivery" id="deliverPizza">Delivery</button>
+</div>
+      </div>  </div>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

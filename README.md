@@ -1,9 +1,9 @@
 #  PROJECT NAME
-  Delani Studio
+  Blaze Pizza
 
 
 #  PROJECT DESCRIPTION
-This is a landing page for a fictional studio that helps to better learns snd practice jQuery and Bootstrap.
+This is blaze pizza's website where the customers can see the variety pizza to order and can add toppings based on their likes and has an option of having it delivered.
 
 
 #  AUTHOR'S INFORMATION
@@ -42,4 +42,4 @@ You can view the live application by following this link https://nimowairimu.git
 
 
 #  LICENCE AND COPYRIGHT INFORMATION
-MIT LICENSE © 2020 Wairimu
+MIT LICENSE © 2021 Wairimu Mungai
