@@ -43,16 +43,26 @@
   <div class="orders" id="order">
       <h1 class="text-center" id="order-pizza">Order Pizza</h1>
       <div class="form-group row">
-          <div class="col-md-12"></div>
-          <div class="col-md-8 order-overlay text-center">
-              <form class="col-md-8 text-center">
-      <label> Pizza size Options</label>
-    <select class="browser-default custom-select" id="size">
-      <option selected>Choose pizza size...</option>
-      <option value="600">Small(500)</option>
-      <option value="900">Medium(Ksh 800)</option>
-      <option value="1200">Large(ksh 1200)</option>
-    </select>
+       <div class="col-md-12"></div>
+        <div class="col-md-8 order-overlay text-center">
+          <form class="col-md-8 text-center">
+          <label>Pick your pizza Flavour:</label>
+           <select class="custom-select custom-select-md mb-3 flavour" required>
+               <option value="hawaiian">Hawaiian</option>
+               <option value="vegtikka">Veg Tikka</option>
+               <option value="chickentikka">Chicken Tikka</option>
+               <option value="periperi">Peri-Peri Chicken</option>
+               <option value="bbq">BBQ Steak</option>
+               <option value="boerewors">Boerewors</option>
+               <option value="mushroom">Chicken and Mushroom</option>
+            </select>
+          <label> Pizza size Options</label>
+        <select class="browser-default custom-select" id="size">
+         <option selected>Choose pizza size...</option>
+         <option value="600">Small(500)</option>
+         <option value="900">Medium(Ksh 800)</option>
+         <option value="1200">Large(ksh 1200)</option>
+       </select>
       <label>Pizza Crust Options</label>
     <select class="browser-default custom-select" id="crust">
       <option selected>Choose pizza crust...</option>
@@ -79,42 +89,23 @@
   </div>
 </div>
 </div>
-<form>
-  <div class="row" id="contactform">
-    <h4 class="text-center color:black">Fill for Delivery</h4>
-       <div class="col-md-12">
-         <h2 class="text-white text-center pt-5">Contact Details</h2>
-         <form id="new-contact">
-           <div class="row">
-             <div class="col">
-               <label class="text-white">First Name </label>
-               <input type="text" class="form-control form-control-sm" id="first-name" placeholder="First Name" required>
-             </div>
-             <div class="col">
-               <label class="text-white">Last Name</label>
-               <input type="text" class="form-control form-control-sm" id="last-name" placeholder="Last Name">
-             </div>
-           </div>
-           <div class="row">
-             <div class="col">
-               <label class="text-white">Email Address</label>
-               <input type="email" class="form-control form-control-sm" id="email-address" placeholder="your email address" required>
-             </div>
-             <div class="col">
-               <label class="text-white">Phone Number</label>
-               <input class="form-control form-control-sm" type="tel" placeholder="your phone number" maxlength="13" id="phone-number" required>
-             </div>
-             <div class="col-sm">
-               <label class="text-white">Telephone Number</label>
-               <input class="form-control form-control-sm" type="text" placeholder="location for delivery" id="location" required>
-             </div>
-           </div>
-           <div class="deliverme">
-              <button type="button" class="btn btn-info"  id ="">Submit</button>
-          </div>
-</form>
-</div>
- </div>
+<div class="confirmOrder">
+ <div class="col-md-12"></div>
+  <div class="col-md-8 order-overlay text-center">
+    <form class="col-md-8 text-center">
+        <div class="list" id="list">
+          <table class="table table-dark">
+            <thead>
+             <tr>
+               <td>Pizza</td>
+               <td>Size</td>
+               <td>Toppings</td>
+               <td>Crust</td>
+               <td>TOTAL</td>
+             </tr>
+          </thead>
+        </table>
+      <h5>Cost: <span class="value"></span></h5>
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 </body>
