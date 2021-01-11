@@ -18,8 +18,10 @@ height: 500px;
   background-color: black;
 }
 
-.container-fluid{
-  background-image: url('images/images.png');
+.container{
+  background-image: url("../images/b.jpeg");
+  height: 300px;
+  background-size: cover;
 }
 nav .navbar{
   width: 99%;
@@ -33,6 +35,7 @@ nav .navbar{
   font-size: 20px;
   font-weight: 700;
 }
+
 
 <label>Pick your pizza Flavour:</label>
 <select class="custom-select custom-select-md mb-3 flavour" required>
