@@ -75,9 +75,9 @@ $(document).ready(function() {
       addToQuantity();
     }
     pizzaOne();
-    $("#deliverPizza").show();
+    $("#deliver").show();
   });
-  $("#deliverPizza").click(function() {
+  $("#deliver").click(function() {
     $("#contactform").slideDown();
   });
   $("#submitbutton").click(function(event) {
