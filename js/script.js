@@ -26,15 +26,15 @@ $("#order").click(
     if (size == "small" && toppings == ""){
       var price = small * quantity;
     }
-    else if (size == "small" && toppings == "Extra tomato" || toppings == "Extra pineapple"){
+    else if (size == "small" && toppings == "Ham" || toppings == "Bacon"){
       var price = small * quantity + topping;
     }if(size == "medium" && toppings =="" ){
       var price = medium * quantity;
-    }else if(size == "medium" && toppings == "Extra tomato" || toppings == "Extra pineapple"){
+    }else if(size == "medium" && toppings == "Ham" || toppings == "Bacon"){
       var price = medium * quantity + topping;
     }if (size == "large" && toppings == ""){
       var price = large * quantity;
-    }else if (size == "large" && toppings =="Extra tomato" || toppings == "Extra pineapple") {
+    }else if (size == "large" && toppings =="Ham" || toppings == "Bacon") {
       var price= large * quantity + topping;
     }
 

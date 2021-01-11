@@ -35,52 +35,39 @@
           <h4 class="text"><strong>Damn-good</strong></h4>
           <h4 class="text"><strong>Cheesy</strong></h4>
           <h4 class="text"><strong>Freshly baked</strong></h4>
-            <a class="btn btn-orange button floater" href="#make-order">  Order Now!</a>
       </div>
   </div>
 <br><br>
-<div class="container txt">
+<div class="container" id="menu">
   <div class="row">
-
-  <div class="col-md-12 ">
-
-    <h1>Place Orders below</h1>
-    <br>
-    <h1 class="type">Pick Flavour</h1>
-    <!--Choose  Flavours-->
-  </div>
+   <div class="col-md-12 ">
+      <h1 class="text-center">Orders</h1>
+      <br>
+      <h1 class="type">Preferred Flavour</h1>
+   </div>
     <div class="col-md-6">
       <select class="form-control col-md-6 one" id="flavor">
-        <option value ="Veg tikka">Veg Tikka</option>
+        <option value ="Hawaiian">Hawaiian</option>
+        <option value ="Veg tikka">Veggies Tikka</option>
         <option value ="Chicken tikka">Chicken Tikka</option>
         <option value ="Peri peri chicken">Peri Peri Chicken</option>
         <option value ="BBQ steak">BBQ Steak</option>
         <option value ="Boerewors">Boerewors</option>
-        <option value ="Hawaiian">Hawaiian</option>
         <option value ="Chicken and mushroom">Chicken and Mushroom</option>
-        <option value ="Regina pizza">Regina Pizza</option>
       </select>
-
-      <!--Option for Toppingss-->
-      <h1 class="type">Extra Toppings</h1>
+      <h1 class="type"> Toppings</h1>
       <select class="form-control  col-md-6 two" id="toppings">
+        <option value ="Ham">Ham</option>
+        <option value ="Bacon">Bacon</option>
         <option value ="">None</option>
-        <option value ="Extra tomato">Extra Tomato</option>
-        <option value ="Extra pineapple">Extra Pinapple</option>
-
 
       </select>
-
-
-  <!--Choose  box Size-->
       <h1 class="type">Pick Size</h1>
       <select class="form-control col-md-6 three" id="size">
         <option value ="large">Large</option>
         <option value ="medium">Medium</option>
         <option value ="small">Small</option>
-
       </select>
-      <!--Choose  box numbers-->
       <h2>How many boxes?</h2>
       <select class="form-control  col-md-6 four" id="quantity">
         <option value ="1">1</option>
@@ -98,21 +85,15 @@
       <div class="form-group col-md-9">
           <button class="btn add" id="order">Place Order</button>
        </div>
-
        <div class="form-group col-md-9">
            <button class="btn" id="deliver">I want a Delivery</button>
         </div>
     </div>
     <div class="col-md-6 txt">
       <h2>Your Order Summary:</h2>
-              <!-- <ol id="payment"> </ol>
-              <ol id="payment1"> </ol>
-              <ol id="payment2"> </ol>
-              <ol id="payment3"> </ol> -->
               <table class="table">
               <thead class ="txt">
                 <tr>
-
                   <th scope="col">Flavor</th>
                   <th scope="col">Toppings</th>
                   <th scope="col">Size</th>
@@ -122,26 +103,16 @@
               </thead>
               <tbody id="pizza" class="gr">
                 <tr>
-
                   <th scope="row" id="flav"></th>
                   <th id="tp"></th>
                   <th id="sz"></th>
                   <th id="bxs"></th>
                   <th id="total"></th>
-
                 </tr>
-
-
               </tbody>
               </table>
-
               <h3><span>Total payable</span><ol id="total"> </ol></h3>
-
     </div>
-
-
-
-
 </div>
 </div>
 

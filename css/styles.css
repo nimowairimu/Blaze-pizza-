@@ -11,7 +11,9 @@
 .contact{
   font-family: Satisfy;
 }
-
+.container{
+  font-family: Satisfy;
+}
 .container-fluid {
   background-image: url("../images/b.jpeg");
   height: 660px;
