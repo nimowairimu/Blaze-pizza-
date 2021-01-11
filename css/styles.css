@@ -9,7 +9,7 @@
 }
 
 .container-fluid {
-  background-image: url("../images/a.jpeg");
+  background-image: url("../images/b.jpeg");
   height: 660px;
   background-size: cover;
   margin-bottom: auto;
@@ -46,4 +46,8 @@ nav .navbar{
 .nav-item a{
   font-size: 20px;
   font-weight: 700;
+}
+
+#menu{
+  font-family: Satisfy;
 }
