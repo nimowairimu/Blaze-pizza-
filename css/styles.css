@@ -8,6 +8,10 @@
   display: none;
 }
 
+.contact{
+  font-family: Satisfy;
+}
+
 .container-fluid {
   background-image: url("../images/b.jpeg");
   height: 660px;
