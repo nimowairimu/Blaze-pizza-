@@ -40,72 +40,102 @@
   </div>
 <br><br>
 
-  <div class="orders" id="order">
-      <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-      <div class="form-group row">
-       <div class="col-md-12"></div>
-        <div class="col-md-8 order-overlay text-center">
-          <form class="col-md-8 text-center">
-          <label>Pick your pizza Flavour:</label>
-           <select class="custom-select custom-select-md mb-3 flavour" required>
-               <option value="hawaiian">Hawaiian</option>
-               <option value="vegtikka">Veg Tikka</option>
-               <option value="chickentikka">Chicken Tikka</option>
-               <option value="periperi">Peri-Peri Chicken</option>
-               <option value="bbq">BBQ Steak</option>
-               <option value="boerewors">Boerewors</option>
-               <option value="mushroom">Chicken and Mushroom</option>
-            </select>
-          <label> Pizza size Options</label>
-        <select class="browser-default custom-select" id="size">
-         <option selected>Choose pizza size...</option>
-         <option value="600">Small(500)</option>
-         <option value="900">Medium(Ksh 800)</option>
-         <option value="1200">Large(ksh 1200)</option>
-       </select>
-      <label>Pizza Crust Options</label>
-    <select class="browser-default custom-select" id="crust">
-      <option selected>Choose pizza crust...</option>
-      <option value="200">Flatbread(ksh 200) </option>
-      <option value="300">Stuffed(ksh 300)</option>
-      <option value="100">Gluten-free(ksh 100)</option>
-    </select>
-      <label>Pizza toppings Options</label>
-    <select class="browser-default custom-select" id="toppings" aria-label="Example select with button addon" required>
-      <option selected>Choose pizza topping...</option>
-      <option value="80">Bacon( Ksh. 80)</option>
-      <option value="80">Mushroom(Ksh. 80)</option>
-      <option value="50">Ham(ksh. 50)</option>
-      <option value="50">Cheese (ksh. 50)</option>
- </select>
- <br>
- <lable>Number Of pizza</lable>
-      <input type="number" class="form-control input" id="noOfOrders" placeholder="how many pizzas?" required>
-    </select>
-  <p class="total">Total Price:</p>
-  <div class="submit">
-    <button type="button" class="btn btn-info"  id ="wholeOrder">Submit</button>
-   <button type="submit" class="btn btn-info" value="Delivery" id="deliver">Delivery</button>
+<div class="container txt">
+  <div class="row">
+
+  <div class="col-md-12 ">
+
+    <h1>Place Orders below</h1>
+    <br>
+    <h1 class="type">Select Flavour</h1>
+    <!--Choose  Flavours-->
   </div>
+    <div class="col-md-6">
+      <select class="form-control col-md-6 one" id="flavor">
+        <option value ="Veg tikka">Veg Tikka</option>
+        <option value ="Chicken tikka">Chicken Tikka</option>
+        <option value ="Peri peri chicken">Peri Peri Chicken</option>
+        <option value ="BBQ steak">BBQ Steak</option>
+        <option value ="Boerewors">Boerewors</option>
+        <option value ="Hawaiian">Hawaiian</option>
+        <option value ="Chicken and mushroom">Chicken and Mushroom</option>
+      </select>
+
+      <h1 class="type">Extra Toppings</h1>
+      <select class="form-control  col-md-6 two" id="toppings">
+        <option value ="bacon">Bacon</option>
+        <option value ="ham">Ham </option>
+        <option value ="mushroom">Mushroom</option>
+      </select>
+
+      <h1 class="type">Pick Size</h1>
+      <select class="form-control col-md-6 three" id="size">
+        <option value ="large">Large</option>
+        <option value ="medium">Medium</option>
+        <option value ="small">Small</option>
+      </select>
+      <h2>Number of Pizza</h2>
+      <select class="form-control  col-md-6 four" id="quantity">
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        <option value ="9">9</option>
+        <option value ="10">10</option>
+      </select>
+      <br>
+      <div class="form-group col-md-9">
+          <button class="btn add" id="order">Order</button>
+       </div>
+
+       <div class="form-group col-md-9">
+           <button class="btn" id="deliver">Delivery</button>
+        </div>
+    </div>
+    <div class="col-md-6 txt">
+      <h2>Confirm Your Order :</h2>
+              <table class="table">
+              <thead class ="txt">
+                <tr>
+                  <th scope="col">Flavor</th>
+                  <th scope="col">Toppings</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">number</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="pizza" class="gr">
+                <tr>
+                  <th scope="row" id="flav"></th>
+                  <th id="tp"></th>
+                  <th id="sz"></th>
+                  <th id="nmb"></th>
+                  <th id="total"></th>
+                </tr>
+              </tbody>
+              </table>
+
+              <h3><span>Total payable</span><ol id="total"> </ol></h3>
+
+
+
+    </div>
+
+
+
+
 </div>
 </div>
-<div class="confirmOrder">
- <div class="col-md-12"></div>
-  <div class="col-md-8 order-overlay text-center">
-    <form class="col-md-8 text-center">
-        <div class="list" id="list">
-          <table class="table table-dark">
-            <thead>
-             <tr>
-               <td>Pizza</td>
-               <td>Size</td>
-               <td>Toppings</td>
-               <td>Crust</td>
-               <td>TOTAL</td>
-             </tr>
-          </thead>
-        </table>
-      <h5>Cost: <span class="value"></span></h5>
+<br>
+
+ <br>
+
+
+
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 </body>

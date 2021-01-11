@@ -1,109 +1,57 @@
-$(document).ready(function() {
-  $("button#wholeOrder").click(function() {
+ $(document).ready(function() {
+  function Pizza(flavor ,toppings,size, quantity, price) {
+    this.flavor = flavor;
+    this.toppings = toppings;
+    this.size = size;
+    this.quantity = quantity;
+    this.price = price;
+  }
 
-    // alert("yes");
-    event.preventDefault();
-    // Gets the input of one pizza
-    var pizzaOne = function add(pizzaSize, pizzaCrust, pizzaTop) {
-      var pizzaSizing = $("#size option:selected").val();
-      var pizzaCrusting = $("#crust option:selected").val();
-      var pizzaTopping = $("#toppings option:selected").val();
-      var pizzaPrice = 0;
+  var small=500;
+  var medium=800;
+  var large= 1200;
+  var topping =50;
 
-      switch (pizzaSizing) {
-        case "1":
-          pizzaPrice = 500;
-          break;
-        case "2":
-          pizzaPrice = 800;
-          break;
-        case "3":
-          pizzaPrice = 1200;
-          break;
-        default:
-          pizzaPrice;
-          break;
+
+  $(document).ready(function() {
+  $("#order").click(
+    function(){
+
+      // Getting values from the form
+      flavor=$('#flavor').val();
+      toppings=$('#toppings').val();
+      size=$('#size').val();
+      quantity=parseInt($('#quantity').val());
+
+      // Getting the total amount
+      if (size == "small" && toppings == ""){
+        var price = small * quantity;
+      }
+      else if (size == "small" && toppings == "Bacon" || toppings == "Ham" || toppings == "Mushroom"){
+        var price = small * quantity + topping;
+      }if(size == "medium" && toppings =="" ){
+        var price = medium * quantity;
+      }else if(size == "medium" && toppings == "Bacon" || toppings == "Ham" || toppings == "Mushroom"){
+        var price = medium * quantity + topping;
+      }if (size == "large" && toppings == ""){
+        var price = large * quantity;
+      }else if (size == "large" && toppings =="Bacon" || toppings == "Ham" || toppings == "Mushroom") {
+        var price= large * quantity + topping;
       }
 
-
-      switch (pizzaCrusting) {
-        case "1":
-          pizzaPrice = 200;
-          break;
-        case "2":
-          pizzaPrice = 300;
-          break;
-        case "3":
-          pizzaPrice = 100;
-          break;
-        default:
-          pizzaPrice;
-          break;
-      }
+      var newPizza = new Pizza(flavor,toppings,size,quantity,price);
+      var newRow = '<tr><th id="flav">' + newPizza.flavor + '</th><td id="tp">' + $("#toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="sz">' + $("#size option:selected").text() + " - " + newPizza.size + '</td><td id="nmb">' + $("#quantity option:selected").text() + " - " + newPizza.quantity + '</td><td id="total">' + newPizza.price + '</td></tr>'
+  $("#pizza").append(newRow);
 
 
-      switch (pizzaTopping) {
-        case "1":
-          pizzaPrice = 80;
-          break;
-
-        case "2":
-          pizzaPrice = 80;
-          break;
-
-        case "3":
-          pizzaPrice = 50;
-          break;
-
-        case "4":
-          pizzaPrice = 50;
-          break;
-        default:
-          pizzaPrice;
-      }
 
 
-      var total = parseInt(pizzaSizing) + parseInt(pizzaCrusting) + parseInt(pizzaTopping);
-
-
-      function addToQuantity() {
-        var pizzaQuantity = $("input#noOfOrders").val();
-        var grandTotal = total * parseInt(pizzaQuantity);
-
-        $(".total").append(grandTotal);
-      }
-      addToQuantity();
     }
-    pizzaOne();
-    $("#deliver").show();
+  );
+  $("#deliver").click(function(){
+    prompt("Enter location for delivery");
   });
-  $("#deliver").click(function() {
-    $("#contactform").slideDown();
-  });
-  $("#submitbutton").click(function(event) {
-    event.preventDefault();
-    var inputtedFirstName = $("input#first-name").val();
-    var inputtedLastName = $("input#last-name").val();
-    var inputtedEmailAddress = $("input#email-address").val();
-    var inputtedPhoneNumber = $("input#phone-number").val();
-    alert(inputtedFirstName + " " + inputtedLastName + " Your order will be ready in 15mins and will be delivered in the next 20 mins")
-    $("#contactform").hide();
-    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedEmailAddress, inputtedPhoneNumber);
-    $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
-    $("input#first-name").val("");
-    $("input#last-name").val("");
-    $("input#email-address").val("");
-    $("input#phone-number").val();
-    $(".contact").last().click(function() {
-      $("#show-contact").show();
-      $("#show-contact h2").text(newContact.firstName);
-      $(".first-name").text(newContact.firstName);
-      $(".last-name").text(newContact.lastName);
-      $(".email-address").text(newContact.email);
-      $(".phone-number").text(newContact.phonenumber);
-    });
-  });
-  $(".sendicon").click(function(event) {
-    alert("Thank you for your feedback");
-  });
-});
+
+
+
+  })
