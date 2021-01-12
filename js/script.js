@@ -52,6 +52,8 @@ $("#pizza").append(newRow);
 );
 $("#deliver").click(function(){
   prompt("Enter location for delivery");
+$("#ok").click(function(){
+    prompt("Your delivery will be made in the next 30 minutes.Thanks for choosing Blaze pizza");
 });
 
 
