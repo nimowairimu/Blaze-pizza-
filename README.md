@@ -32,7 +32,7 @@ This is blaze pizza's website where the customers can see the variety pizza to o
 
 
 # Live Links
-You can view the live application by following this link https://nimowairimu.github.io/Delani-Studio-/
+You can view the live application by following this link https://nimowairimu.github.io/Blaze-pizza-/
 
 
 #   TECHNOLOGY USED
@@ -40,6 +40,8 @@ You can view the live application by following this link https://nimowairimu.git
   * Bootstrap
   * Jquery
 
+# Known Bugs 
+The price of topping remains the same even when the size of pizza changes.
 
 #  CONTACT INFORMATION
   - You can provide feedback or raise any issues/ bugs through my [Email](nimowairimu@gmail.com)
