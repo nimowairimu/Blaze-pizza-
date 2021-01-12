@@ -29,16 +29,16 @@ $("#order").click(
     if (size == "small" && toppings == ""|| crust ==""){
       var price = small * quantity;
     }
-    else if (size == "small" && toppings == "Ham" || toppings == "Bacon" && crust =="Thin" || crust =="Thick" || crust=="Stuffed"){
+    else if (size == "small" && toppings == "Ham" || toppings == "Bacon" || crust =="Thin" || crust =="Thick" || crust=="Stuffed"){
       var price = small * quantity + topping + crust;
     }if(size == "medium" && toppings =="" || crust =="" ){
       var price = medium * quantity;
-    }else if(size == "medium" && toppings == "Ham" || toppings == "Bacon" && crust =="Thin" || crust =="Thick" || crust=="Stuffed"){
-      var price = medium * quantity + topping+ crust;
+    }else if(size == "medium" && toppings == "Ham" || toppings == "Bacon" || crust =="Thin" || crust =="Thick" || crust=="Stuffed"){
+      var price = medium * quantity + topping + crust;
     }if (size == "large" && toppings == "" || crust ==""){
       var price = large * quantity;
-    }else if (size == "large" && toppings =="Ham" || toppings == "Bacon" && crust =="Thin" || crust =="Thick" || crust=="Stuffed") {
-      var price= large * quantity + topping+ crust;
+    }else if (size == "large" && toppings =="Ham" || toppings == "Bacon" || crust =="Thin" || crust =="Thick" || crust=="Stuffed") {
+      var price= large * quantity + topping + crust;
     }
 
     var newPizza = new Pizza(flavor,toppings,size,quantity,price);

@@ -12,7 +12,7 @@ This is blaze pizza's website where the customers can see the variety pizza to o
 
 #  SET UP INSTRUCTIONS
   1.  Clone the Repository
-    ``git clone https://nimowairimu.github.io/Delani-Studio/``
+    ``git clone https://nimowairimu.github.io/Blze-pizza/``
   1. Extract the cloned file.
    1. cd to Delani-Studio folder.
   1.   Launch ``index.html file.``
@@ -20,10 +20,15 @@ This is blaze pizza's website where the customers can see the variety pizza to o
 
 
 #   BDD.
-1. Under what we do, clicking on the image will toggle a paragraph explaining about the service.
-1. Hovering over each image will show a white box with the name of the image.
-1. Upon entering your details and message in the contact-us form, the data will be sent to mailchimp and you will receive a confirmation message thanking you for contacting them.
-1.   In case, submit form is entered without any values in the form, an alert message will pop-up telling you to put in valid information. ​
+  1.   Choose the size of pizza I want e.g Small, Medium, Large
+  1.  Choose what kind of crust I would like the pizza to have e.g Crispy, Stuffed, Gluten-free
+  1.  Choose the topping(s) I want on my pizza.
+  1.  Place an order for my Pizza and see the total charge for it.
+  1.  Have an option to order as many pizzas as I want.
+  1.  Have an option to have the pizza delivered or not.  If delivered I want to be alerted how much the delivery charge will be.
+  1.  If I want my pizza to be delivered, I want to be prompted to enter where the delivery should be made and an alert saying '' your order will be delivered to your location"
+  1.  See a checkout button that when clicked shows the total amount charged for the orders.
+
 
 
 # Live Links
