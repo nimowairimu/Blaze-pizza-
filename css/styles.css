@@ -10,6 +10,8 @@
 
 .contact{
   font-family: Satisfy;
+  font-weight: bold;
+  background-image: url("../images/w.jpeg");
 }
 .container{
   font-family: Satisfy;
