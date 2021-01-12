@@ -42,7 +42,7 @@ $("#order").click(
     }
 
     var newPizza = new Pizza(flavor,toppings,size,quantity,price);
-    var newRow = '<tr><th id="flav">' + newPizza.flavor + '</th><td id="tp">' + $("#toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="sz">' + $("#size option:selected").text() + " - " + newPizza.size + '</td><td id="quantity">' + $("#quantity option:selected").text() + " - " + newPizza.quantity + '</td><td id="total">' + newPizza.price + '</td></tr>'
+    var newRow = '<tr><th id="flav">' + newPizza.flavor + '</th><td id="tp">' + $("#toppings option:selected").text() +'</th><td id="cst">' + $("#crust option:selected").text() + " - " + newPizza.toppings + '</td><td id="sz">' + $("#size option:selected").text() + " - " + newPizza.size + '</td><td id="quantity">' + $("#quantity option:selected").text() + " - " + newPizza.quantity + '</td><td id="total">' + newPizza.price + '</td></tr>'
 $("#pizza").append(newRow);
 
 

@@ -76,11 +76,7 @@
       </select>
       <br>
       <h2>No of Pizza</h2>
-      <select class="form-control  col-md-6 four" id="quantity">
-        <option value ="Thin">Thin</option>
-        <option value ="Thick">Thick</option>
-        <option value ="Stufffed">Stuffed</option>
-      </select>
+      <input type="number" class="form-control  col-md-6 four" id="quantity" min="1" max="infinite"="" required>
       <br>
       <div class="form-group col-md-9">
           <button class="btn add" id="order">Order</button>
@@ -102,12 +98,13 @@
                   <th scope="col">Total</th>
                 </tr>
               </thead>
-              <tbody id="pizza" class="gr">
+              <tbody id="pizza" class="newRow">
                 <tr>
                   <th scope="row" id="flav"></th>
                   <th id="tp"></th>
                   <th id="sz"></th>
-                  <th id="bxs"></th>
+                  <th id="cst"></th>
+                  <th id="quantity"></th>
                   <th id="total"></th>
                 </tr>
               </tbody>
